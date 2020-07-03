@@ -1,28 +1,50 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import Transition from '../views/OddTransition.vue'
+import Style from '../views/UnexpectedStyle.vue'
+import Props from '../views/NotChangedProps.vue'
+import HeavyComp from '../views/TooHeavyComp.vue'
+import Computed from '../views/NotChangedComputed.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: '/transition',
+    name: 'OddTransition',
+    component: Transition
+  },
+  {
+    path: '/style',
+    name: 'Style',
+    component: Style
+  },
+  {
+    path: '/props',
+    name: 'Props',
+    component: Props
+  },
+  {
+    path: '/heavy',
+    name: 'HeavyComp',
+    component: HeavyComp
+  },
+  {
+    path: '/computed',
+    name: 'Computed',
+    component: Computed
   }
-];
+]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
-});
+})
 
-export default router;
+export default router
