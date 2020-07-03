@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" :class="$route.name">
+      <h1 class="AppTitle">
+        <div class="sub">エラーは出ないけどなにか変？？</div>
+        Vue.jsでやりがちな「サイレント・ミス」5選
+      </h1>
       <router-link to="/">TOP</router-link>
       <router-link to="/transition">1. ちょっと変なトランジション</router-link>
       <router-link to="/style">2. なぜか効かないスタイル</router-link>
@@ -25,7 +29,9 @@
 
 #nav {
   padding: 30px;
-
+  .AppTitle {
+    display: none;
+  }
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -43,6 +49,19 @@
     }
     &:last-child::after {
       content: '';
+    }
+  }
+
+  &.Home {
+    .AppTitle {
+      display: block;
+    }
+    text-align: left;
+    > a {
+      display: block;
+      &::after {
+        content: '';
+      }
     }
   }
 }
@@ -63,7 +82,19 @@ section {
   }
 }
 
-input, button {
+h1 {
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  .sub {
+    font-size: 14px;
+    color: #42b983;
+  }
+}
+
+input,
+button {
   font-size: 16px;
   margin: 4px;
 }

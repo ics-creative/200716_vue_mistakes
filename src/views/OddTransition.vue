@@ -8,7 +8,11 @@
       </label>
       <ol class="List">
         <transition-group name="item-animation">
-          <li v-for="(item, index) in todoItems" :key="index" class="List_Item">
+          <li
+            v-for="(item, index) in todoItems"
+            :key="`todo-${index}`"
+            class="List_Item"
+          >
             <TodoItem :text="item" @remove="removeItem(index)" />
           </li>
         </transition-group>
