@@ -1,8 +1,23 @@
 <template>
   <div class="ExampleMessage">
     <slot />
+    <div class="ExampleMessage_Links">
+      <SourceLink
+        v-for="source in sources"
+        :key="source"
+        :sourcePath="source"
+      />
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    sources: { type: Array, default: () => [] }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .ExampleMessage {
@@ -23,6 +38,10 @@
     padding: 1px 4px;
     left: 0;
     top: 0;
+  }
+  &_Links {
+    padding-top: 10px;
+    text-align: left;
   }
 }
 </style>

@@ -8,7 +8,9 @@
       >で表示しています
     </div>
 
-    <ExampleMessage>
+    <ExampleMessage
+      :sources="['views/UnexpectedStyle.vue', 'components/ErrorMessage.vue']"
+    >
       この画面では自作の「ErrorMessage」コンポーネントにエラーメッセージを表示しています。
       ErrorMessageコンポーネントはエラーを赤文字で表示するはずが、なぜかこの画面では青くなってしまいました。
       どこに間違いがあるのでしょうか？

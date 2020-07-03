@@ -18,7 +18,13 @@
       <ZipAddress :zipcode="zipCode" />
     </section>
 
-    <ExampleMessage>
+    <ExampleMessage
+      :sources="[
+        'views/NotChangedProps.vue',
+        'components/ColorView.vue',
+        'components/ZipAddress.vue'
+      ]"
+    >
       この画面では自作の「ColorView」コンポーネントと「ZipAddress」コンポーネントで入力されたコードから色や住所を表示しています。
       初期表示はうまくいきますが、入力欄のコードを変更しても色や住所が変わりません。
       どこに間違いがあるのでしょうか？

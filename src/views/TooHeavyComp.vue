@@ -5,7 +5,7 @@
     </div>
     <input v-model="someText" />
 
-    <ExampleMessage>
+    <ExampleMessage :sources="['views/TooHeavyComp.vue']">
       ページにメッセージ表示欄を作って:v-showで表示をON/OFFする機能を追加したところ、
       なぜかinputのテキスト入力がとても重くなってしまいました。
       追加した処理と入力欄には何も関係はないはずです。なにが起きているのでしょう？

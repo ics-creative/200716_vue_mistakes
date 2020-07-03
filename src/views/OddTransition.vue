@@ -19,7 +19,7 @@
       </ol>
     </section>
 
-    <ExampleMessage>
+    <ExampleMessage :sources="['views/OddTransition.vue']">
       <p>
         簡単なTODOリストを作成し、
         <a href="https://jp.vuejs.org/v2/guide/transitions.html">

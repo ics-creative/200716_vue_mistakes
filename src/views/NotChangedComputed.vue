@@ -36,7 +36,7 @@
       </div>
     </section>
 
-    <ExampleMessage>
+    <ExampleMessage :sources="['views/NotChangedComputed.vue']">
       この例ではスライダーを動かすことでブロックの数を変更し、数に合わせて1ブロックの幅も調整しています。
       なぜか上の例は幅が正しく計算されていません。
       下の例は上と同じcomputedに「console.log()」を足しただけですが、なぜか動いてしまいました。何が起きているのでしょうか？
