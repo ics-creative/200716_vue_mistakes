@@ -8,9 +8,9 @@
       <router-link to="/">TOP</router-link>
       <router-link to="/transition">1. ちょっと変なトランジション</router-link>
       <router-link to="/style">2. なぜか効かないスタイル</router-link>
-      <router-link to="/props">3. なぜか変わらないprops</router-link>
+      <router-link to="/props">3. なぜか反映されないprops</router-link>
       <router-link to="/heavy">4. なぜか重いコンポーネント</router-link>
-      <router-link to="/computed">5. 変わらないcomputed</router-link>
+      <router-link to="/computed">5. 微妙に再計算されないcomputed</router-link>
     </div>
     <router-view />
   </div>
