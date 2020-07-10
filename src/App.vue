@@ -3,14 +3,12 @@
     <div id="nav" :class="$route.name">
       <h1 class="AppTitle">
         <div class="sub">エラーは出ないけどなにか変？？</div>
-        Vue.jsでやりがちな「サイレント・ミス」5選
+        Vue.jsでやりがちな「サイレント・ミス」
       </h1>
       <router-link to="/">TOP</router-link>
-      <router-link to="/transition">1. ちょっと変なトランジション</router-link>
-      <router-link to="/style">2. なぜか効かないスタイル</router-link>
-      <router-link to="/props">3. なぜか反映されないprops</router-link>
-      <router-link to="/heavy">4. なぜか重いコンポーネント</router-link>
-      <router-link to="/computed">5. 微妙に再計算されないcomputed</router-link>
+      <router-link to="/heavy">1. なぜか重いコンポーネント</router-link>
+      <router-link to="/props">2. なぜか反映されないprops</router-link>
+      <router-link to="/computed">3. 微妙に再計算されないcomputed</router-link>
     </div>
     <router-view />
   </div>
@@ -87,6 +85,10 @@ h1 {
   font-size: 20px;
   padding: 5px;
   border-bottom: 1px solid #ddd;
+  background-image: url(./assets/titlebg.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom -17px;
+  background-size: 80px;
   .sub {
     font-size: 14px;
     color: #42b983;

@@ -15,6 +15,13 @@ export default {
   },
   beforeDestroy() {
     console.log(`TodoItem.beforeDestroy: "${this.text}"が削除されました`)
+  },
+  watch: {
+    text(newVal, oldVal) {
+      console.log(
+        `TodoItem.watch.text: "${oldVal}"が"${newVal}"に変更されました`
+      )
+    }
   }
 }
 </script>

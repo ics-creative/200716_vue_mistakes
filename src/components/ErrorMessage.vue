@@ -18,7 +18,7 @@ export default {
   background-color: rgb(255, 227, 227);
   padding: 20px 10px 10px;
   /* ！！メッセージは赤文字にしています！！ */
-  color: rgb(145, 59, 59);
+  color: rgb(145, 60, 60);
   position: relative;
   &::before {
     content: 'ERROR';

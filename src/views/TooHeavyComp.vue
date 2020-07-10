@@ -1,6 +1,6 @@
 <template>
   <div class="TooHeavyCompPage">
-    <div class="message" :v-show="someHeavyFunc()">
+    <div class="message" v-show="someHeavyFunc()">
       サンプルのメッセージです。このメッセージの表示ON/OFFはv-showで設定しています。
     </div>
     <input v-model="someText" />

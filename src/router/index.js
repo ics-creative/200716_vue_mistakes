@@ -6,6 +6,7 @@ import Style from '../views/UnexpectedStyle.vue'
 import Props from '../views/NotChangedProps.vue'
 import HeavyComp from '../views/TooHeavyComp.vue'
 import Computed from '../views/NotChangedComputed.vue'
+import TestPage from '../views/TestPage.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/computed',
     name: 'Computed',
     component: Computed
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: TestPage
   }
 ]
 

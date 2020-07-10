@@ -13,8 +13,6 @@ const requireComponent = require.context(
   /.*\.vue$/
 )
 
-console.log(requireComponent.keys())
-
 requireComponent.keys().forEach(fileName => {
   // コンポーネント設定を取得する
   const componentConfig = requireComponent(fileName)
@@ -35,8 +33,6 @@ requireComponent.keys().forEach(fileName => {
     // 存在しない場合にはモジュールのルートにフォールバックします。
     componentConfig.default || componentConfig
   )
-
-  console.log(componentName, componentConfig.default)
 })
 
 new Vue({

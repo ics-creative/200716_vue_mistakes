@@ -1,7 +1,7 @@
 <template>
   <div class="OddTransitionPage">
     <section>
-      <h2>トランジションがちょっと変なTodoList</h2>
+      <h2>トランジションがちょっと変なTodoList1</h2>
       <label class="NewTodo">
         新しい項目： <input v-model="newItem" class="NewTodo_Input" />
         <button @click="addItem">追加</button>
