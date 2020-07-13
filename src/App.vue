@@ -70,8 +70,17 @@ section {
   border: 1px solid #ddd;
   padding: 0 10px 10px;
   margin-bottom: 10px;
+  font-size: 13x;
   h2:first-child {
-    font-size: 14px;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+    padding: 2px 5px;
+    position: relative;
+    text-align: left;
+  }
+  h3:first-child {
+    font-size: 13px;
     color: #333;
     font-weight: bold;
     padding: 2px 5px;

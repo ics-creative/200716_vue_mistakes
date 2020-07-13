@@ -22,22 +22,24 @@ export default {
 <style lang="scss" scoped>
 .ExampleMessage {
   margin-top: 30px;
-  border: 1px solid rgb(138, 157, 165);
+  border: 2px solid #2c3e50;
   background-color: rgb(243, 249, 250);
   padding: 20px 10px 10px;
   color: rgb(56, 64, 66);
   position: relative;
+  border-radius: 3px;
   font-size: 12px;
   &::before {
-    content: 'なにか変？？';
+    content: 'なにが変？？';
     position: absolute;
-    background-color: rgb(138, 157, 165);
+    background-color: #2c3e50;
     color: rgb(245, 253, 253);
     font-size: 10px;
     font-weight: bold;
     padding: 1px 4px;
     left: 0;
     top: 0;
+    border-radius: 0 0 3px 0;
   }
   &_Links {
     padding-top: 10px;
