@@ -104,6 +104,10 @@ h1 {
   }
 }
 
+a {
+  color: #42b983;
+}
+
 input,
 button {
   font-size: 16px;

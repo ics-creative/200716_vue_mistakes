@@ -11,7 +11,7 @@ export default {
   },
   computed: {
     fullUrl() {
-      return `https://github.com/ics-creative/200703_vue_mistakes/tree/master/src/${this.sourcePath}`
+      return `https://github.com/ics-creative/200716_vue_mistakes/tree/master/src/${this.sourcePath}`
     }
   }
 }
